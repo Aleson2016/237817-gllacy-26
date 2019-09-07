@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Aleksandra Son](https://up.htmlacademy.ru/htmlcss/26/user/237817).
-* Наставник: [Оксана Сергеева] (https://htmlacademy.ru/profile/oksana).
+* Наставник: [Оксана Сергеева](https://htmlacademy.ru/profile/oksana).
 
 ---
 
