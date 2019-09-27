@@ -54,9 +54,9 @@
       </div>
     </header>
     <main>
-      <h1>Магазин Глэйси</h1>
+      <h1 class="visually-hidden">Магазин Глэйси</h1>
       <section>
-        <h2>Акции</h2>
+        <h2 class="visually-hidden">Акции</h2>
         <ul>
           <li>
             <h3>Малинка даром!</h3>
@@ -75,7 +75,7 @@
         </ul>
       </section>
       <section>
-        <h2>Хиты</h2>
+        <h2 class="visually-hidden">Хиты</h2>
         <ul>
           <li>
             <img src="img/ice-cream-orange.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"/>
@@ -109,7 +109,7 @@
       </section>
       <section>
         <b>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
-        <h2>Преимущества "Глэйси"</h2>
+        <h2 class="visually-hidden">Преимущества "Глэйси"</h2>
         <ul>
           <li>
             Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
@@ -155,16 +155,16 @@
     <footer>
       <ul>
         <li>
-          <a href=""><span>Twitter</span></a>
+          <a href=""><span class="visually-hidden">Twitter</span></a>
         </li>
         <li>
-          <a href=""><span>Instagram</span></a>
+          <a href=""><span class="visually-hidden">Instagram</span></a>
         </li>
         <li>
-          <a href=""><span>Facebook</span></a>
+          <a href=""><span class="visually-hidden">Facebook</span></a>
         </li>
         <li>
-          <a href=""><span>Vkontakte</span></a>
+          <a href=""><span class="visually-hidden">Vkontakte</span></a>
         </li>
       </ul>
       <ul>
@@ -192,20 +192,36 @@
     <!-- Модальные окна -->
 
     <div class="sign-in">
-      <!-- Форма-->
-      <a href="">Забыли пароль</a>
-      <a href="">Новая регистрация</a>
+      <form action="" method="post">
+        <label for="user-login" class="visually-hidden">Логин</label>
+        <input id="user-login" type="email" name="login" placeholder="email@example.com">
+        <label for="user-password" class="visually-hidden">Пароль</label>
+        <input id="user-password" type="password" name="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+        <input type="submit" value="Войти">
+        <a href="">Забыли пароль?</a>
+        <a href="">Новая регистрация</a>
+      </form>
     </div>
 
     <div class="search">
-      <!-- Форма-->
+      <form action="" method="get">
+        <label for="search-field" class="visually-hidden">Поиск</label>
+        <input id="search-field" type="search" name="search" placeholder="Крем-брюле">
+      </form>
     </div>
 
     <div class="feedback">
       <p>
         Мы обязательно Вам ответим!
       </p>
-      <!-- Форма-->
+      <form action="" method="post">
+        <label for="user-name" class="visually-hidden">Имя и фамилия</label>
+        <input id="user-name" type="text" name="user-name" placeholder="ИмяФамилия">
+        <label for="user-email" class="visually-hidden">Электронная почта</label>
+        <input id="user-email" type="email" name="email" placeholder="email@example.com">
+        <textarea id="user-feedback" name="user-feedback" rows="5">В свободной форме</textarea>
+        <input type="submit" value="Отправить">
+      </form>
     </div>
 
   </body>

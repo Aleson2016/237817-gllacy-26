@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+    <title>HTML Academy: каталог Глейси</title>
   </head>
   <body>
     <header>
@@ -63,8 +63,76 @@
         </li>
       </ul>
       <h1>Сливочное мороженое</h1>
-      <section>
+      <section class="filters">
         <!-- Сортировка и фильтры -->
+        <form action="" method="get">
+          <fieldset>
+            <legend>Сортировка:</legend>
+            <select name="filter">
+              <option value="popularity">По популярности</option>
+              <option value="cheap-first">Сначала недорогие</option>
+              <option value="expensive-first">Сначала дорогие</option>
+              <option value="fat-content">По жирности</option>
+            </select>
+          </fieldset>
+
+          <!-- Ползунок, цена
+          <fieldset>
+            <legend>Цена:</legend>
+            <output name="min-price"></output>
+            <output name="max-price"></output>
+
+          </fieldset>
+        -->
+          <fieldset>
+            <legend>Жирность:</legend>
+            <ul>
+              <li>
+                <input type="radio" id="0" name="fat-content" value="0">
+                <label for="0">0%</label>
+              </li>
+              <li>
+                <input type="radio" id="up-to-10" name="fat-content" value="up-to-10" checked>
+                <label for="up-to-10">до 10%</label>
+              </li>
+              <li>
+                <input type="radio" id="up-to-30" name="fat-content" value="up-to-30">
+                <label for="up-to-30">до 30%</label>
+              </li>
+              <li>
+                <input type="radio" id="over-30" name="fat-content" value="up-to-30">
+                <label>выше 30%</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Наполнители:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="chocolate" id="filter-chocolate" checked>
+                <label for="filter-chocolate">шоколадные</label>
+              </li>
+              <li>
+                <input type="checkbox" name="sugar" id="filter-sugar" checked>
+                <label for="filter-sugar">сахарные присыпки</label>
+              </li>
+              <li>
+                <input type="checkbox" name="fruit" id="filter-fruit">
+                <label for="filter-fruit">фрукты</label>
+              </li>
+              <li>
+                <input type="checkbox" name="syrup" id="filter-syrup">
+                <label for="filter-syrup">сиропы</label>
+              </li>
+              <li>
+                <input type="checkbox" name="jam" id="filter-jam">
+                <label for="filter-jam">джемы</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Применить</button>
+        </form>
       </section>
       <section class="products-list">
         <ul>
@@ -148,22 +216,22 @@
         <a href="" class="btn">3</a>
         <a href="" class="btn">4</a>
         <a href="" class="btn">5</a>
-        <a href="" class="btn next">Следующая</a>
+        <a href="" class="btn next visually-hidden">Следующая</a>
       </div>
     </main>
     <footer>
       <ul>
         <li>
-          <a href=""><span>Twitter</span></a>
+          <a href=""><span class="visually-hidden">Twitter</span></a>
         </li>
         <li>
-          <a href=""><span>Instagram</span></a>
+          <a href=""><span class="visually-hidden">Instagram</span></a>
         </li>
         <li>
-          <a href=""><span>Facebook</span></a>
+          <a href=""><span class="visually-hidden">Facebook</span></a>
         </li>
         <li>
-          <a href=""><span>Vkontakte</span></a>
+          <a href=""><span class="visually-hidden">Vkontakte</span></a>
         </li>
       </ul>
       <ul>
