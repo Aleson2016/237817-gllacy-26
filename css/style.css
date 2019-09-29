@@ -1,0 +1,242 @@
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  background-color: #849d8f;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.main-menu a {
+  font-size: 16px;
+  line-height: 18px;
+  color: inherit;
+}
+
+.main-menu a:hover {
+  color: #323232;
+}
+
+.main-menu a:active {
+  color:
+}
+
+.sub-menu {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.client-block {
+  font-size: 14px;
+  line-height: 16px;
+  color: inherit;
+  list-style: none;
+  text-decoration: none;
+}
+
+.schedule {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.phone-number {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.special-offer h3 {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.special-offer ul {
+  list-style: none;
+}
+
+.special-offer p {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.button {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.hits ul {
+  list-style: none;
+}
+
+.price {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.price span {
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.description {
+  text-align:center;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.advantages {
+  color: #323232;
+}
+
+.advantages b {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.advantages ul {
+  list-style: none;
+}
+
+.advantages li {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.blog-news {
+  color: #323232;
+}
+
+.blog-news p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.blog-news a {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: inherit;
+}
+
+.subscription label {
+  font-size: 16px;
+  line-height: 22px;
+  color: #5a5a5a;
+}
+
+.contacts {
+  color: #323232;
+}
+
+.contacts p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contacts span {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  font-size: 14px;
+  line-height: 16px;
+  color:inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.filter-item legend {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.filter-item ul {
+  list-style: none;
+}
+
+.filter-item option {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.filter-item label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.filters button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.products-list ul {
+  list-style: none;
+}
+
+.social-btn {
+  list-style: none;
+}
+
+.add-navigation {
+  list-style: none;
+}
+
+.add-navigation a {
+  font-size: 13px;
+  line-height: 18px;
+  color: inherit;
+  text-decoration: none;
+  list-style: none;
+}
+
+.copyright p {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sign-in a {
+  font-size: 13px;
+  line-height: 24px;
+  color: #323232;
+  text-decoration: none;
+}
+
+.feedback p {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #323232;
+}
+
+.basket-items {
+  font-size: 13px;
+  line-height: 16px;
+  color: #323232;
+}
