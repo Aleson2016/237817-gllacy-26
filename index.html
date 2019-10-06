@@ -50,7 +50,7 @@
                 <div class="modal-content search">
                   <form action="" method="get">
                     <label for="search-field" class="visually-hidden">Поиск</label>
-                    <input id="search-field" type="search" name="search" placeholder="Крем-брюле" required>
+                    <input id="search-field" type="search" name="search" class="modal-field" placeholder="Крем-брюле" required>
                   </form>
                 </div>
 
@@ -62,12 +62,17 @@
                 <div class="modal-content sign-in">
                   <form action="" method="post">
                     <label for="user-login" class="visually-hidden">Логин</label>
-                    <input id="user-login" type="email" name="login" placeholder="email@example.com" required>
+                    <input id="user-login" type="email" name="login" class="modal-field" placeholder="email@example.com" required>
                     <label for="user-password" class="visually-hidden">Пароль</label>
-                    <input id="user-password" type="password" name="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" required>
-                    <input type="submit" value="Войти" class="button">
-                    <a href="">Забыли пароль?</a>
-                    <a href="">Новая регистрация</a>
+                    <input id="user-password" type="password" name="password" class="modal-field" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" required>
+                    <div class="sign-in-wrapper">
+                      <input type="submit" value="Войти" class="button">
+                      <div>
+                        <a href="">Забыли пароль?</a>
+                        <a href="">Новая регистрация</a>
+                      </div>
+                    </div>
+
                   </form>
                 </div>
 
@@ -244,15 +249,16 @@
 
       <!-- модальное окно -->
       <div class="feedback">
+        <button class="feedback-close" type="button" title="Закрыть"><span class="visually-hidden">Закрыть</span></button>
         <p>
           Мы обязательно Вам ответим!
         </p>
         <form action="" method="post">
           <label for="user-name" class="visually-hidden">Имя и фамилия</label>
-          <input id="user-name" type="text" name="user-name" placeholder="ИмяФамилия" required>
+          <input id="user-name" type="text" name="user-name" class="modal-field" placeholder="Имя Фамилия" required>
           <label for="user-email" class="visually-hidden">Электронная почта</label>
-          <input id="user-email" type="email" name="email" placeholder="email@example.com" required>
-          <textarea id="user-feedback" name="user-feedback" rows="5" placeholder="В свободной форме" required></textarea>
+          <input id="user-email" type="email" name="email" class="modal-field" placeholder="email@example.com" required>
+          <textarea id="user-feedback" name="user-feedback" rows="5" class="modal-field" placeholder="В свободной форме" required></textarea>
           <input type="submit" value="Отправить" class="button">
         </form>
       </div>

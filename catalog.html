@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: каталог Глейси</title>
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -49,7 +50,7 @@
                 <div class="modal-content search">
                   <form action="" method="get">
                     <label for="search-field" class="visually-hidden">Поиск</label>
-                    <input id="search-field" type="search" name="search" placeholder="Крем-брюле" required>
+                    <input id="search-field" type="search" name="search" class="modal-field" placeholder="Крем-брюле" required>
                   </form>
                 </div>
 
@@ -61,12 +62,17 @@
                 <div class="modal-content sign-in">
                   <form action="" method="post">
                     <label for="user-login" class="visually-hidden">Логин</label>
-                    <input id="user-login" type="email" name="login" placeholder="email@example.com" required>
+                    <input id="user-login" type="email" name="login" class="modal-field" placeholder="email@example.com" required>
                     <label for="user-password" class="visually-hidden">Пароль</label>
-                    <input id="user-password" type="password" name="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" required>
-                    <input type="submit" value="Войти" class="button">
-                    <a href="">Забыли пароль?</a>
-                    <a href="">Новая регистрация</a>
+                    <input id="user-password" type="password" name="password" class="modal-field" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" required>
+                    <div class="sign-in-wrapper">
+                      <input type="submit" value="Войти" class="button">
+                      <div>
+                        <a href="">Забыли пароль?</a>
+                        <a href="">Новая регистрация</a>
+                      </div>
+                    </div>
+
                   </form>
                 </div>
 
