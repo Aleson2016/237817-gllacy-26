@@ -876,10 +876,15 @@ iframe {
   flex-wrap: wrap;
 }
 
+.breadcrumbs-item::after {
+  content: "»";
+
+  margin-right: 7px;
+}
+
 .breadcrumbs a {
-  display: block;
-  margin-right: 5px;
-  padding-right: 15px;
+  display: inline-block;
+  margin-right: 7px;
 
   font-size: 14px;
   line-height: 16px;
