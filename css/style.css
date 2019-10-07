@@ -290,6 +290,12 @@ body {
   width: 302px;
 }
 
+.user-block li:first-child:hover .search,
+.user-block li:nth-child(2):hover .sign-in,
+.user-block li:nth-child(3):hover .basket-items {
+  display: block;
+}
+
 .sign-in-btn {
   padding-left: 45px;
 
@@ -302,10 +308,6 @@ body {
   display: none;
 
   width: 238px;
-}
-
-.sign-in .btn {
-  width: 70px;
 }
 
 .sign-in-wrapper {
@@ -758,7 +760,8 @@ header .container {
 }
 
 .subscription .button {
-  margin-left: 10px;
+  margin-left: 5px;
+  padding: 15px 20px;
 }
 
 .contacts {
@@ -812,11 +815,11 @@ iframe {
   box-shadow: 0 20px 20px 0 #000000;
 }
 
-/*
+
 .feedback-show {
   display: block;
 }
-*/
+
 .feedback-close {
   position: absolute;
   right: 15px;
