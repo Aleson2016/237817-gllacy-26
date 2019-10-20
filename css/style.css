@@ -252,6 +252,11 @@ body {
   cursor: pointer;
 }
 
+.user-block-btn:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
 .search-btn {
   width: 32px;
   height: 32px;
@@ -323,7 +328,6 @@ body {
 }
 
 .sign-in-btn:hover {
-  color: #000000;
   background-image: url("../img/entrance-black.svg");
 }
 
@@ -354,34 +358,97 @@ body {
 
   background-image: url("../img/basket.svg");
   background-repeat: no-repeat;
-  background-position: 10px 10px;
+  background-position: 15px 10px;
+}
+
+.basket-btn:hover {
+  background: url("../img/basket-red.svg") no-repeat;
+  background-color: #ffffff;
+  background-position: 15px 10px;
 }
 
 .basket-items {
   display: none;
-  width: 510px;
-  margin-top: 15px;
-  padding: 15px;
-  padding-bottom: 70px;
+  margin-top: 13px;
+  padding: 10px 15px;
+  padding-bottom: 60px;
 
   font-size: 13px;
   line-height: 16px;
   color: #323232;
 }
 
-.basket-items td {
-  padding: 15px;
+.basket-items-table {
+  width: 510px;
+  border-collapse: collapse;
 }
 
-/*
-.basket-items-name {
-  width: 225px;
-  padding-left: 75px;
+.basket-items-table td {
+  padding: 18px 0;
 }
-*/
 
-.basket-items .total {
+.cancel {
+  width: 15px;
+
+  background: url("../img/cross-small.svg") no-repeat;
+  background-position: 0 20px;
+}
+
+.item-name {
+  position: relative;
+  width: 280px;
+}
+
+.item-name::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: inline-block;
+  vertical-align: top;
+  width: 33px;
+  height: 33px;
+
+  border-radius: 50%;
+}
+
+.item1::before {
+  background: url("../img/basket-ice-cream1.png") no-repeat;
+  background-position: 0 0;
+}
+
+.item2::before {
+  background: url("../img/basket-ice-cream2.png") no-repeat;
+  background-position: 0 0;
+}
+
+.item-name span {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  padding-left: 55px;
+}
+
+.item-weight {
   text-align: right;
+  vertical-align: top;
+  padding-bottom: 15px;
+}
+
+.kilo-price {
+  text-align: left;
+  vertical-align: top;
+  color: #999999;
+}
+
+.item-total {
+  text-align: center;
+  vertical-align: top;
+}
+
+.basket-total {
+  text-align: right;
+  padding: 0;
 
   font-size: 15px;
   line-height: 18px;
@@ -392,8 +459,10 @@ body {
 
 .basket-items .button {
   position: absolute;
-  right: 20px;
-  bottom: 20px;
+  right: 15px;
+  bottom: 23px;
+
+  padding: 10px 15px;
 }
 
 header .container {
@@ -796,7 +865,7 @@ header .container {
 .subscription input[type="email"] {
   width: 335px;
   margin-bottom: 12px;
-  margin-right: 5px;
+  margin-right: 4px;
   padding: 12px 15px;
   border-radius: 5px;
   border: 1px solid rgba(178,178,178,0.52);
@@ -817,6 +886,8 @@ header .container {
 
 .contacts {
   position: relative;
+
+  background: url("../img/map.png") no-repeat;
 }
 
 iframe {
