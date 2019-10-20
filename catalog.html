@@ -16,7 +16,7 @@
           <div class="main-navigation-wrapper">
             <ul class="main-menu ul-reset">
               <li class="catalog">
-                <a href="catalog.html" class="main-menu-item">Каталог</a>
+                <a href="catalog.html" class="main-menu-item active">Каталог</a>
                 <ul class="sub-menu ul-reset">
                   <li>
                     <a href="" class="sub-menu-item new">Новинки</a>
@@ -48,7 +48,7 @@
 
                 <!-- модальное окно -->
                 <div class="modal-content search">
-                  <form action="" method="get">
+                  <form action="http://echo.htmlacademy.ru" method="get">
                     <label for="search-field" class="visually-hidden">Поиск</label>
                     <input id="search-field" type="search" name="search" class="modal-field" placeholder="Крем-брюле" required>
                   </form>
@@ -60,7 +60,7 @@
 
                 <!-- модальное окно -->
                 <div class="modal-content sign-in">
-                  <form action="" method="post">
+                  <form action="http://echo.htmlacademy.ru" method="post">
                     <label for="user-login" class="visually-hidden">Логин</label>
                     <input id="user-login" type="email" name="login" class="modal-field" placeholder="email@example.com" required>
                     <label for="user-password" class="visually-hidden">Пароль</label>
@@ -78,23 +78,27 @@
 
               </li>
               <li class="user-block-item">
-                <a href="" class="user-block-btn basket-btn">Корзина</a>
+                <a href="" class="user-block-btn basket-btn">2 товара</a>
 
                 <!-- модальное окно -->
                 <div class="modal-content basket-items">
                   <table class="basket-items-table">
                     <tr>
-                      <td class="basket-item-name">Пломбир с апельсиновым джемом</td>
-                      <td>1,5 кг х 200 руб.</td>
-                      <td>300 руб.</td>
+                      <td class="cancel"><span class="visually-hidden">Отменить</span></td>
+                      <td class="item-name item1"><span>Пломбир с апельсиновым джемом</span></td>
+                      <td class="item-weight">1,5 кг х</td>
+                      <td class="kilo-price">200 руб.</td>
+                      <td class="item-total">300 руб.</td>
                     </tr>
                     <tr>
-                      <td class="basket-item-name">Клубничный пломбир с присыпкой из белого шоколада</td>
-                      <td>1,5 кг х 300 руб.</td>
-                      <td>450 руб.</td>
+                      <td class="cancel"><span class="visually-hidden">Отменить</span></td>
+                      <td class="item-name item2"><span>Клубничный пломбир с присыпкой из белого шоколада</span></td>
+                      <td class="item-weight">1,5 кг х</td>
+                      <td class="kilo-price">300 руб.</td>
+                      <td class="item-total">450 руб.</td>
                     </tr>
                     <tr>
-                      <td colspan="3" class="total">
+                      <td colspan="5" class="basket-total">
                         Итого: 750 руб.
                       </td>
                     </tr>
@@ -107,8 +111,8 @@
           </div>
         </nav>
         <p class="schedule">
-          <span>С 10 до 20 ежедневно</span><br>
-          <span class="phone-number">8 812 450-25-25</span>
+          <span>С 10 до 20 ежедневно</span>
+          <a href="tel:88124502525" class="phone-number">8 812 450-25-25</a>
         </p>
       </div>
     </header>
@@ -129,7 +133,7 @@
         <h1 class="page-heading">Сливочное мороженое</h1>
         <section>
           <!-- Сортировка и фильтры -->
-          <form action="" method="get" class="filters">
+          <form action="http://echo.htmlacademy.ru" method="get" class="filters">
             <fieldset class="filter-item">
               <legend class="filter-title">Сортировка:</legend>
               <select name="filter" class="filter-item-list">
@@ -347,10 +351,10 @@
             <a href="" class="link active">Для поставщиков</a>
           </li>
           <li>
-            <a href="" class="link">Наши документы</a>
+            <a href="" class="link">О производстве</a>
           </li>
           <li>
-            <a href="" class="link">О производстве</a>
+            <a href="" class="link">Наши документы</a>
           </li>
           <li>
             <a href="" class="link">Экологические стандарты</a>
