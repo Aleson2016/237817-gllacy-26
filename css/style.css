@@ -45,7 +45,9 @@ body {
   list-style: none;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active),
+.fat-content input[type="radio"],
+.filler input[type="checkbox"] {
   position: absolute;
 
   width: 1px;
@@ -295,16 +297,18 @@ body {
   line-height: 24px;
   color: #999999;
 
-  border: 1px solid #999999;
+  border: 1px solid #d3d3d2;
   border-radius: 5px;
 }
 
 .modal-field:hover {
-  border: 2px solid rgba(154,154,154,0.52);
+  padding: 14px;
+  border: 2px solid #c7c6c5;
 }
 
 .modal-field:focus {
-  border: 2px solid rgba(46,136,228,0.52);
+  padding: 14px;
+  border: 2px solid #8fbdec;
 }
 
 .search {
@@ -353,18 +357,35 @@ body {
 }
 
 .basket-btn {
+  padding: 10px 15px;
   padding-left: 45px;
+
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 16px;
+  color: inherit;
+  font-weight: 500;
   text-decoration: none;
 
+  border: none;
+  border-radius: 16px;
+  background-color: rgba(255,255,255,0.2);
   background-image: url("../img/basket.svg");
   background-repeat: no-repeat;
   background-position: 15px 10px;
+
+  cursor: pointer;
 }
 
-.basket-btn:hover {
+.basket-active {
+  color: #000000;
   background: url("../img/basket-red.svg") no-repeat;
   background-color: #ffffff;
   background-position: 15px 10px;
+}
+
+.basket-btn:hover .basket-items {
+  display: block;
 }
 
 .basket-items {
@@ -392,6 +413,8 @@ body {
 
   background: url("../img/cross-small.svg") no-repeat;
   background-position: 0 20px;
+
+  cursor: pointer;
 }
 
 .item-name {
@@ -465,7 +488,7 @@ body {
   padding: 10px 15px;
 }
 
-header .container {
+.main-header .container {
   position: relative;
 }
 
@@ -644,10 +667,12 @@ header .container {
 }
 
 .special-offer li:first-child {
+  background-color: #83475e;
   background-image: url("../img/bg-raspberry.jpg");
 }
 
 .special-offer li:nth-child(2) {
+  background-color: #371c10;
   background-image: url("../img/bg-chocolate.jpg");
 }
 
@@ -731,6 +756,10 @@ header .container {
   font-weight: 500;
 }
 
+.hits-item:hover .show-product {
+  display: block;
+}
+
 .advantages {
   margin-bottom: 40px;
   padding: 25px 20px;
@@ -739,6 +768,7 @@ header .container {
   color: #323232;
 
   border-radius: 14px;
+  background-color: #eadec4;
   background-image: url("../img/bg-waffle.png");
 }
 
@@ -868,15 +898,17 @@ header .container {
   margin-right: 4px;
   padding: 12px 15px;
   border-radius: 5px;
-  border: 1px solid rgba(178,178,178,0.52);
+  border: 1px solid #d3d3d2;
 }
 
 .subscription input:hover {
-  border: 2px solid rgba(154,154,154,0.52);
+  padding: 11px 14px;
+  border: 2px solid #c7c6c5;
 }
 
 .subscription input:focus {
-  border: 2px solid rgba(46,136,228,0.52);
+  padding: 11px 14px;
+  border: 2px solid #8fbdec;
 }
 
 .subscription .button {
@@ -888,9 +920,10 @@ header .container {
   position: relative;
 
   background: url("../img/map.png") no-repeat;
+  background-position: center -2px;
 }
 
-iframe {
+.contacts iframe {
   width: 100%;
 }
 
@@ -930,9 +963,25 @@ iframe {
 }
 
 .contact-info .button {
+  display: block;
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 20px;
+}
+
+@keyframes stretching {
+  0% {
+    width: 1px;
+  }
+  30% {
+    width: 200px;
+  }
+  70% {
+    width: 500px;
+  }
+  100% {
+    width: 478px;
+  }
 }
 
 .feedback {
@@ -957,6 +1006,8 @@ iframe {
 
 .feedback-show {
   display: block;
+  animation-name: stretching;
+  animation-duration: 0.3s;
 }
 
 .feedback-close {
@@ -1001,10 +1052,6 @@ iframe {
   line-height: 28px;
   font-weight: 500;
   color: #323232;
-}
-
-.feedback .modal-field {
-  border-color: rgba(178,178,178,0.52);
 }
 
 .feedback .button {
@@ -1234,11 +1281,6 @@ iframe {
   margin-right: 0;
 }
 
-.fat-content input[type="radio"],
-.filler input[type="checkbox"] {
-  display: none;
-}
-
 .fat-content .radio,
 .filler .checkbox {
   position: relative;
@@ -1271,12 +1313,18 @@ iframe {
   background: url("../img/radio-on.svg") no-repeat;
 }
 
+.fat-content input[type="radio"]:disabled + .radio::before {
+  opacity: 0.4;
+  cursor: default;
+}
+
 .fat-content .radio:hover::before {
   opacity: 1;
 }
 
-.fat-content .radio:disabled::before {
-  opacity: 0.4;
+.fat-content input[type="radio"]:focus + .radio::before {
+  opacity: 1;
+  outline: 2px solid #8fbdec;
 }
 
 .filler {
@@ -1312,12 +1360,17 @@ iframe {
   background: url("../img/checkbox-on.svg") no-repeat;
 }
 
+.filler input[type="checkbox"]:disabled + .checkbox::before {
+  opacity: 0.4;
+}
+
 .filler .checkbox:hover::before {
   opacity: 1;
 }
 
-.filler .checkbox:disabled::before {
-  opacity: 0.4;
+.filler input[type="checkbox"]:focus + .checkbox::before {
+  opacity: 1;
+  outline: 2px solid #8fbdec;
 }
 
 .filters button {
@@ -1463,7 +1516,7 @@ iframe {
   opacity: 0.2;
 }
 
-footer {
+.main-footer {
   padding-top:15px;
   padding-bottom: 15px;
 }

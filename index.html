@@ -5,24 +5,24 @@
     <title>HTML Academy: Глейси</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/min-style.css" rel="stylesheet">
   </head>
   <body class="main-page">
 
-    <header>
+    <header class="main-header">
       <div class="container">
         <nav class="main-navigation">
-          <a href="index.html" class="logo"><img src="img/logo.svg" width="154" height="64" alt="Логотип GllacyShop"/></a>
+          <a href="" class="logo"><img src="img/logo.svg" width="154" height="64" alt="Логотип GllacyShop"/></a>
           <div class="main-navigation-wrapper">
             <ul class="main-menu ul-reset">
               <li class="catalog">
-                <a href="catalog.html" class="main-menu-item">Каталог</a>
+                <a href="" class="main-menu-item">Каталог</a>
                 <ul class="sub-menu ul-reset">
                   <li>
                     <a href="" class="sub-menu-item new">Новинки</a>
                   </li>
                   <li>
-                    <a href="" class="sub-menu-item">Сливочное</a>
+                    <a href="catalog.html" class="sub-menu-item">Сливочное</a>
                   </li>
                   <li>
                     <a href="" class="sub-menu-item">Щербеты</a>
@@ -78,7 +78,7 @@
               </li>
 
               <li class="user-block-item">
-                <a href="" class="user-block-btn basket-btn">Пусто</a>
+                <a href="" class="basket-btn">Пусто</a>
               </li>
 
             </ul>
@@ -149,6 +149,9 @@
               <a href="" class="description link">
                 Сливочное с апельсиновым джемом и цитрусовой стружкой
               </a>
+              <div class="show-product">
+                <button type="button" class="button product-btn">Быстрый просмотр</button>
+              </div>
             </li>
             <li class="hits-item">
               <img src="img/ice-cream-coffee.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада"/>
@@ -156,6 +159,9 @@
               <a href="" class="description link">
                 Сливочно-кофейное с кусочками шоколада
               </a>
+              <div class="show-product">
+                <button type="button" class="button product-btn">Быстрый просмотр</button>
+              </div>
             </li>
             <li class="hits-item">
               <img src="img/ice-cream-strawberry.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада"/>
@@ -163,6 +169,9 @@
               <a href="" class="description link">
                 Сливочно-клубничное с присыпкой из белого шоколада
               </a>
+              <div class="show-product">
+                <button type="button" class="button product-btn">Быстрый просмотр</button>
+              </div>
             </li>
             <li class="hits-item">
               <img src="img/ice-cream-brulee.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"/>
@@ -170,6 +179,9 @@
               <a href="" class="description link">
                 Сливочное крем-брюле с карамельной подливкой
               </a>
+              <div class="show-product">
+                <button type="button" class="button product-btn">Быстрый просмотр</button>
+              </div>
             </li>
           </ul>
         </section>
@@ -210,7 +222,7 @@
     </main>
 
     <div class="contacts">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.169387787664!2d30.319988032701186!3d59.939033284710156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1569843889425!5m2!1sru!2sru" height="428" style="border:0;" allowfullscreen=""></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.169387787664!2d30.319988032701186!3d59.939033284710156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1569843889425!5m2!1sru!2sru" height="430" style="border:0;" allowfullscreen=""></iframe>
       <div class="contact-info">
         <p>
           Адрес главного офиса<br>
@@ -223,7 +235,7 @@
           <a href="tel:88124502525" class="phone-number">8 812 450-25-25</a>
           (с 10 до 20 ежедневно)
         </p>
-        <button class="button" type="button">Форма обратной связи</button>
+        <a class="button" href="writeus.html">Форма обратной связи</a>
       </div>
 
       <!-- модальное окно -->
@@ -245,7 +257,7 @@
     </div>
 
 
-    <footer>
+    <footer class="main-footer">
       <div class="footer-wrapper container">
         <ul class="social ul-reset">
           <li>
@@ -276,15 +288,15 @@
           </li>
         </ul>
         <div class="copyright">
-          <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy"></a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy"></a>
           <p>
-            Сделано в <a href="https://htmlacademy.ru" class="link">HTML Academy</a> &copy; 2019
+            Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="link">HTML Academy</a> &copy; 2019
           </p>
         </div>
       </div>
     </footer>
 
-    <script src="js/modal.js"></script>
+    <script src="js/min-modal.js"></script>
 
   </body>
 </html>
